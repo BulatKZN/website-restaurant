@@ -1,0 +1,1 @@
+const btnDish = document.querySelector('.btn-dish');
