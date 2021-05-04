@@ -1,0 +1,92 @@
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+@import "../scss/var.scss";
+
+.content {
+    background-color: $black;
+    padding-top: 80px;
+    height: 100vh;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.name {
+    color: $white;
+    font-size: 33px;
+    margin-bottom: 40px;
+}
+
+.variety-menu {
+    display: flex;
+    color: $white;
+    font-size: 16px;
+    margin-bottom: 20px;
+         & .variety-menu-item-active {
+            color:$green;
+            margin-right: 20px;
+     }
+}
+
+.cooking-time {
+    font-size: 16px;
+    color:$white;
+    margin-bottom: 25px;
+        & span {
+            color: $gray;
+        }
+}
+
+.btn-dish {
+    color: $white;
+    font-size: 16px;
+    background-color: $green;
+    border-radius: 40px;
+    padding: 9px 16px;
+    margin-bottom: 100px;
+}
+
+.food-slider {
+    display: flex;
+}
+
+
+.food-slider-item {
+    
+    background-color: $black-menu-item;
+    border-radius: 20px;
+    margin-right: 40px;
+    width: 210px;
+    height: 275px;
+        & .menu-img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 210px;
+            height: 155px;
+            margin-bottom: 15px;
+        }
+}
+
+.food-slider-content{
+    padding-left: 10px;
+}
+
+.food-slider-title {
+    color: $white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.food-slider-parameters-item {
+    display: flex;
+    color: $white;
+    font-size: 12px;
+    margin-bottom: 10px;
+    & .food-slider-energy-name {
+        color: $gray;
+    }
+    & .food-slider-time {
+        color: $gray;
+    }
+}
