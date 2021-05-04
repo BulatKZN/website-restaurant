@@ -1,7 +1,7 @@
 @import "../node_modules/normalize-scss/sass/normalize/import-now";
 @import "../scss/var.scss";
 
-.header {
+.content {
     background-color: $black;
     padding-top: 80px;
     height: 100vh;
@@ -23,7 +23,7 @@
     color: $white;
     font-size: 16px;
     margin-bottom: 20px;
-         & span {
+         & .variety-menu-item-active {
             color:$green;
             margin-right: 20px;
      }
@@ -47,54 +47,46 @@
     margin-bottom: 100px;
 }
 
-.menu {
+.food-slider {
     display: flex;
 }
 
 
-.menu-item {
-    position: relative;
+.food-slider-item {
+    
     background-color: $black-menu-item;
     border-radius: 20px;
     margin-right: 40px;
     width: 210px;
     height: 275px;
         & .menu-img {
-            position: absolute;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             width: 210px;
-            height: 155px
+            height: 155px;
+            margin-bottom: 15px;
         }
-        & .menu-item-title {
-            position: absolute;
-            top: 160px;
-            left: 12px;
-            color: $white;
-            font-size: 18px;
-        }
-        & .menu-item-salutariness {
-            position: absolute;
-            top: 220px;
-            left: 12px;
-            color: $white;
-            font-size: 12px;
-        }
+}
 
-        & .menu-item-salutariness span {
-            color: $gray;
-        }
+.food-slider-content{
+    padding-left: 10px;
+}
 
-        & .menu-item-time {
-            position: absolute;
-            top: 240px;
-            left: 12px;
-            color: $white;
-            font-size: 12px;
-        }
-        & .menu-item-time span {
-            color: $gray;
-        }
+.food-slider-title {
+    color: $white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
-
+.food-slider-parameters-item {
+    display: flex;
+    color: $white;
+    font-size: 12px;
+    margin-bottom: 10px;
+    & .food-slider-energy-name {
+        color: $gray;
+    }
+    & .food-slider-time {
+        color: $gray;
+    }
 }
