@@ -3,11 +3,14 @@ import { Recipe } from './recipe';
 
 
 const btnDish = document.querySelector('.btn-dish');
+const foodSlider = document.querySelector('.food-slider');
 
 getRecepies().then((resp) => {
-  const recipes = resp.results.map((rec) => {
+  const recipes : Recipe [] = resp.results.map((rec) => {
       return new Recipe(rec.sourceName, rec.healthScore, rec.readyInMinutes, rec.image);
   })
-  console.log(recipes);
+  recipes.forEach((recipe) => {
+    foodSlider.appendChild(recipe.html());
+  })
 })
 
